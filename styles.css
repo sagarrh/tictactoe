@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F7F7; /* Very light grey */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 360px;
+    background: linear-gradient(45deg, #DD5E89, #F7BB97); /* Instagram's gradient */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.5s ease; 
+    background-color: #FFFFFF; /* White */
+    border-radius: 5px; /* Add some border radius */
+}
+
+.cell:hover {
+    background-color: #F0F0F0; /* Light grey on hover */
+}
+
+.message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333333; /* Dark grey */
+}
+
+.fade {
+    opacity: 0.5;
+}
+
+.next-fade {
+    background-color: #ecb4ec; /* Light grey */
+}
